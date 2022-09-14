@@ -8,6 +8,37 @@
         </nav>
     </header>
     <body>
+        <p>Please contact me if you'd like to offer me a job or if you would like to book a Tarot reading.</p>
+        <form>
+            <fieldset>
+                <legend>Contact details:</legend>
+            
+                    <label>
+                        Name:
+                        <input type="text" value="Name" name="name" placeholder="Your name here">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="text" name="email" value="Email" placeholder="Your email here">
+                    </label>
+                </fieldset>
+               
+                <fieldset>
+                    <legend>
+                        Why would you like to contact me?
+                    </legend> 
+                    <label for="reasons">List of possible reasons:</label>
+                    <select id="reasons" name="reasons">
+                        <option value="Tarot" selected>I'd like a Tarot reading</option>
+                        <option value="JS">I'd like to offer you a Developer job</option>
+                        <option value="producer">I'd like to offer you a Producer job</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="question">If you'd like a Tarot reading, what is your main question?</label>
+                    <input type="textarea" value="question" id="question" name="question" placeholder="Your question here">
+                </fieldset>
+        </form>
         <a href="mailto:carlos.marfil.r@gmail.com" target="_blank">Email me NOW!</a>
     </body>
 </html>

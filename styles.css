@@ -1,0 +1,83 @@
+
+/* IMG STYLES */
+
+    img[src*="Headshot"] {
+        width: 300px;
+        height: 300px;
+    }
+    .aboutme img {
+    width: 400px;
+    height: 600px;
+    }
+
+/* NAV STYLE */
+
+    .myname {
+        position:fixed;
+        top:0;
+        left:0;
+        margin-left: 1%;
+        color:pink;
+    }
+   [href*="pages"] {
+        position: relative;
+        color:pink;
+        text-decoration: none;
+    }
+
+    .navi {
+        position:fixed;
+        top:0;
+        right:0;
+        padding-right: 30px;  
+        padding-top: 40px;
+    }
+
+/* FONT STYLES */
+
+    pre {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .text {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+
+
+/* BULLET POINT HEARTS */
+
+    ul {
+        list-style: none;
+    }
+
+   .hearts li::before {
+        content: "\2764";
+        color: #ff02ee;
+    }
+
+/* PLACING THE HEARTS LIST */
+
+    .heartlist {
+        position:absolute;
+        top: 12%;
+        left: 26%;
+    }
+
+
+
+/* EXERCISE */
+
+.div-element {
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: red;
+ }
+ .span-element {
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: blue;
+ }

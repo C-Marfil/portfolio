@@ -1,28 +1,53 @@
 
+body {
+
+    background: rgb(234,215,235);
+    background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);}
+
 /* IMG STYLES */
 
     img[src*="Headshot"] {
         width: 300px;
         height: 300px;
+        margin-left: auto;
+        margin-right: 50%;
+        display:block;
     }
+
     .aboutme img {
     width: 400px;
     height: 600px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
     }
 
+/* ABOUT ME STYLES */
+
+.aboutme h2 {
+    color: rgb(246, 145, 162);
+    text-align: center;
+}
+
 /* NAV STYLE */
+
+hr {
+    border-top: 10px pink;
+    border-radius: 5px;
+}
 
     .myname {
         position:fixed;
         top:0;
         left:0;
         margin-left: 1%;
-        color:pink;
+        color:rgb(237, 148, 162);
     }
    [href*="pages"] {
         position: relative;
-        color:pink;
+        color:rgb(242, 155, 169);
         text-decoration: none;
+        line-height: 1.5em;
     }
 
     .navi {
@@ -33,10 +58,17 @@
         padding-top: 40px;
     }
 
+    figcaption {
+        color: rgb(231, 139, 154);
+        text-align: center;
+    }
+
 /* FONT STYLES */
 
     pre {
+        text-align: center;
         font-family: 'Space Grotesk', sans-serif;
+        color: rgb(234, 143, 158);
     }
 
     .text {
@@ -46,6 +78,13 @@
 
 
 /* BULLET POINT HEARTS */
+  .heartlist li {
+    color: rgb(218, 132, 146);
+  }
+
+  .heartlist h3 {
+    color: rgb(233, 135, 151);
+  }
 
     ul {
         list-style: none;
@@ -60,8 +99,8 @@
 
     .heartlist {
         position:absolute;
-        top: 12%;
-        left: 26%;
+        top: 14%;
+        left: 55%;
     }
 
 
@@ -80,4 +119,10 @@
     width: 100px;
     color: white;
     background-color: blue;
+ }
+
+ /* FOOTER STYLES */
+
+ footer {
+    color: rgb(218, 116, 133);
  }

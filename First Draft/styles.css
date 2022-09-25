@@ -1,0 +1,136 @@
+/* BACKGROUND GRADIENT */
+
+body {
+
+    background: rgb(234,215,235);
+    background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);}
+
+/* IMG STYLES */
+
+    img[src*="Headshot"] {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: 50%;
+        display:block;
+        border-radius: 25px;
+    }
+
+    .aboutme img {
+    width: 400px;
+    height: 600px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    }
+
+/* ABOUT ME STYLES */
+
+.aboutme h2 {
+    color: rgb(246, 145, 162);
+    text-align: center;
+}
+
+/* NAV STYLE */
+
+hr {
+    border-top: 10px pink;
+    border-radius: 5px;
+}
+
+    .myname {
+        position:fixed;
+        top:0;
+        left:0;
+        margin-left: 1%;
+        color:rgb(237, 148, 162);
+    }
+   [href*="pages"] {
+        position: relative;
+        color:rgb(242, 155, 169);
+        text-decoration: none;
+        line-height: 1.5em;
+    }
+
+    .navi {
+        position:fixed;
+        top:0;
+        right:0;
+        padding-right: 30px;  
+        padding-top: 40px;
+    }
+
+    figcaption {
+        color: rgb(231, 139, 154);
+        text-align: center;
+    }
+
+/* FONT STYLES */
+
+    pre {
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        color: rgb(234, 143, 158);
+    }
+
+    .text {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    
+
+/* BULLET POINT HEARTS */
+  .heartlist li {
+    color: rgb(218, 132, 146);
+  }
+
+  .heartlist h3 {
+    color: rgb(233, 135, 151);
+  }
+
+    ul {
+        list-style: none;
+    }
+
+   .hearts li::before {
+        content: "\2764";
+        color: #ff02ee;
+    }
+
+/* PLACING THE HEARTS LIST */
+
+    .heartlist {
+        position:absolute;
+        top: 14%;
+        left: 55%;
+    }
+
+/* FOOTER STYLES */
+
+footer {
+    color: rgb(218, 116, 133);
+ }
+
+ /* TRYING TO GET THE WAND ANIMATED */
+
+ @keyframes sakura {
+    0% {margin-top: 0%; margin-top: 0%; transform: rotate(360deg);}
+    100% {margin-top: 90%; margin-left: 90%; transform: rotate(780deg);}
+}
+
+.sakura {
+    height:100px;
+    width: 35px;
+    display:block;
+    position: absolute;
+    animation-name: sakura;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* EXERCISE */
+
+
+ 

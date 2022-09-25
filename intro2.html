@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en, Spanish" class="text">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="my-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+
+
+<!-- HEADER
+With name, fixed 
+TODO: For desktop, button to go to CV -->
+
+
+<!-- INTRO 
+With paragraph including gifs -->
+<body>
+    <nav class="navi">
+        <h1>CARLOS MARFIL</h1>
+    </nav>
+    <h3>About</h3>
+   
+        <div class="intro">
+            <p>
+        I'm a Creative Producer of visual arts, who especializes in Art + Tech.
+        I am currently training to become a Junior Software Developer. 
+        <br>
+        <br>
+        When I'm not happily
+        typing in front of his screens, you can find me directing theatre plays, thinking 
+        about video games, or trying to remember how to laugh.
+            </p>
+            <br>
+            <hr>
+            <br>
+        </div>
+    </main>
+
+<!-- ARTICLES COLLAPSIBLE -->
+<img class="collapsible gridarticle" src="./images/Tidus laugh.png" alt="dskdskd">
+<div class="content gridcontent">
+    <div id="contentflex">
+        <h2 id="lol">Laughing with</h2>
+        <h4 id="tag">  WRITER </h4>
+    </div>
+    <p>
+    Part academic research, part a love letter to video games. In this article I explore Final Fantasy X's lore,
+    following every lead I find and tracing it back to what makes us humans.   
+    </p>
+</div>
+
+<img class="collapsible gridarticle2" src="./images/ftg.png" alt="dskdskd">
+<div class="content gridcontent2">
+    <div id="contentflex">
+        <h2 id="ftg">Following the Gourd</h2>
+        <h4 class="producer"> PRODUCER </h4>
+    </div>
+  <p> Following the Gourd by Ebun Sodipo (UK) was developed in collaboration with young LGBTQ+ people online,
+     led by a small group of Black trans people: The Cartographer’s Committee.
+  </p>
+</div>
+
+<img class="collapsible gridarticle3" src="./images/ftg.png" alt="dskdskd">
+<div class="content gridcontent3">
+    <div id="contentflex">
+        <h2 id="ftg">Following the Gourd</h2>
+        <h4 class="producer"> PRODUCER </h4>
+    </div>
+  <p> Following the Gourd by Ebun Sodipo (UK) was developed in collaboration with young LGBTQ+ people online,
+     led by a small group of Black trans people: The Cartographer’s Committee.
+  </p>
+</div>
+
+
+<!-- I WILL ADD MORE ARTICLES ABOVE THIS COMMENT -->
+
+<!-- SCRIPT FOR COLLAPSIBLES -->
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</body>
+
+
+
+
+    
+
+
+
+
+
+
+
+</html>

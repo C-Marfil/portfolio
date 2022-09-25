@@ -1,3 +1,4 @@
+/* BACKGROUND GRADIENT */
 
 body {
 
@@ -78,7 +79,6 @@ hr {
     }
     
 
-
 /* BULLET POINT HEARTS */
   .heartlist li {
     color: rgb(218, 132, 146);
@@ -115,7 +115,7 @@ footer {
 
  @keyframes sakura {
     0% {margin-top: 0%; margin-top: 0%; transform: rotate(360deg);}
-    100% {margin-top: 90%; margin-left: 100%; transform: rotate(780deg);}
+    100% {margin-top: 90%; margin-left: 90%; transform: rotate(780deg);}
 }
 
 .sakura {

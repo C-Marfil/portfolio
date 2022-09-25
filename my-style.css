@@ -1,0 +1,174 @@
+
+/* -- MOBILE FIRST STYLES -- 
+This is a dressed down version of the portfolio */
+/* -- GRID -- */
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "navi about"
+    "intro intro"
+    "break break"
+    "articles articles"
+    "content content"
+    "article2 article2"
+    "content2 content2"
+    "article3 article3"
+    "content3 content3"
+
+}
+/*  -- GENERAL STYLING -- */
+/* -- Font --*/
+
+body {
+    background: rgb(234,215,235);
+    background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);}
+
+.text {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+/* -- Navigator -- */
+.navi {
+    grid-area: navi;
+    font-size: 10vvw;
+    color: rgb(241, 136, 153);
+}
+
+h3 {
+    grid-area: about;
+    justify-self: end;
+    align-self: center;
+    color: rgb(226, 108, 128);
+    padding-right: 10px;
+}
+
+
+/* -- Intro -- */
+.intro {
+    grid-area: intro;
+    color: rgb(237, 122, 141);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size:20px;
+}
+
+.nothing {
+    grid-area: break;
+}
+
+/* General styles for articles and content */
+h2 {
+    font-size: 4vw;
+    color: rgb(226, 108, 128);
+}
+
+p {
+    font-size: 3vw;
+    color: rgb(226, 108, 128);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+h3 {
+    font-weight: 50;
+ 
+}
+
+#tag {
+    grid-area: tag;
+    font-size: 2vw;
+    color: rgb(226, 108, 128);
+    padding-left: 50%;
+    padding-bottom: 5%;
+}
+
+#contentflex {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* -- Specific styles for Specific Articles -- */
+/* LAUGHING WITH */
+#tag {
+    grid-area: tag;
+    font-size: 2vw;
+    color: rgb(226, 108, 128);
+    padding-left: 50%;
+    padding-bottom: 5%;
+}
+
+#lol::after {
+    content: "  🤣 ";
+}
+.gridarticle {
+    grid-area: articles;
+}
+.gridcontent {
+    grid-area: content;
+}
+
+/* FOLLOWING THE GOURD */
+.producer {
+    grid-area: tag;
+    font-size: 2vw;
+    color: rgb(226, 108, 128);
+    padding-left: 37%;
+    padding-bottom: 5%;
+}
+#ftg::after{
+    content:" ⭐";
+}
+.gridarticle2 {
+    grid-area: article2;
+}
+.gridcontent2 {
+    grid-area: content2;
+}
+
+/* AUGMENTED EMPATHY */
+.producer {
+    grid-area: tag;
+    font-size: 2vw;
+    color: rgb(226, 108, 128);
+    padding-left: 37%;
+    padding-bottom: 5%;
+}
+#ftg::after{
+    content:" ⭐";
+}
+.gridarticle3 {
+    grid-area: article3;
+}
+.gridcontent3 {
+    grid-area: content3;
+}
+
+
+/* BIRTHDAY GARDEN */
+
+/* COLLAPSIBLE STYLES */
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 25px;
+    padding-bottom:15px;
+  }
+  .active, .collapsible:hover {
+    background-image: pink;
+  }
+  .content {
+    align-self:end;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    border: 10px;
+    transition: max-height 0.2s ease-out;
+    background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);
+  }

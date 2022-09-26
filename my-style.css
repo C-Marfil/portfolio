@@ -15,6 +15,8 @@ body {
     "content2 content2"
     "article3 article3"
     "content3 content3"
+    "article4 article4"
+    "content4 content4"
 
 }
 /*  -- GENERAL STYLING -- */
@@ -32,7 +34,6 @@ body {
 /* -- Navigator -- */
 .navi {
     grid-area: navi;
-    font-size: 10vvw;
     color: rgb(241, 136, 153);
 }
 
@@ -51,7 +52,7 @@ h3 {
     color: rgb(237, 122, 141);
     padding-left: 10%;
     padding-right: 10%;
-    font-size:20px;
+    font-size:1vw;
 }
 
 .nothing {
@@ -60,12 +61,12 @@ h3 {
 
 /* General styles for articles and content */
 h2 {
-    font-size: 4vw;
+    font-size: 3vw;
     color: rgb(226, 108, 128);
 }
 
 p {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: rgb(226, 108, 128);
     padding-bottom: 10px;
     padding-left: 10px;
@@ -73,13 +74,13 @@ p {
 }
 
 h3 {
-    font-weight: 50;
+    font-size: 2vw;
  
 }
 
 #tag {
     grid-area: tag;
-    font-size: 2vw;
+    font-size: 1vw;
     color: rgb(226, 108, 128);
     padding-left: 50%;
     padding-bottom: 5%;
@@ -96,10 +97,9 @@ h3 {
     grid-area: tag;
     font-size: 2vw;
     color: rgb(226, 108, 128);
-    padding-left: 50%;
+    padding-left: 65%;
     padding-bottom: 5%;
 }
-
 #lol::after {
     content: "  🤣 ";
 }
@@ -115,7 +115,7 @@ h3 {
     grid-area: tag;
     font-size: 2vw;
     color: rgb(226, 108, 128);
-    padding-left: 37%;
+    padding-left: 20%;
     padding-bottom: 5%;
 }
 #ftg::after{
@@ -136,8 +136,8 @@ h3 {
     padding-left: 37%;
     padding-bottom: 5%;
 }
-#ftg::after{
-    content:" ⭐";
+#ae::after{
+    content:" 🪞";
 }
 .gridarticle3 {
     grid-area: article3;
@@ -146,9 +146,23 @@ h3 {
     grid-area: content3;
 }
 
-
 /* BIRTHDAY GARDEN */
-
+.producer {
+    grid-area: tag;
+    font-size: 2vw;
+    color: rgb(226, 108, 128);
+    padding-left: 50%;
+    padding-bottom: 5%;
+}
+#Bday::after{
+    content:"   🌱 🌱  ";
+}
+.gridarticle4 {
+    grid-area: article4;
+}
+.gridcontent4 {
+    grid-area: content4;
+}
 /* COLLAPSIBLE STYLES */
 .collapsible {
     cursor: pointer;

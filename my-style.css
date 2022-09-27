@@ -1,8 +1,116 @@
+/* -- WEB STYLES -- */
+/*  -- GENERAL STYLING -- */
+/* -- Font --*/
+@media only screen and (max-height:930px) {
+body {
+    background: rgb(234,215,235);
+    background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);}
+.text {
+    font-family: 'Space Grotesk', sans-serif;
+}
+#img {
+    width: 70%;
+    height:auto;
+}
+/* -- GRID -- */
+body {
+    display:grid;
+    grid-template-areas:
+    "carlos about"
+    "intro intro"
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+    "img4 content4"
+}
+
+/* -- NAV -- */
+.navi {
+    color: rgb(240, 113, 134);
+    padding-left: 5%;
+    grid-area: carlos;
+}
+.about {
+    color:rgb(240, 113, 134);
+    grid-area: about;
+    justify-self: end;
+    padding-right: 10%;
+}
+
+/* -- INTRO -- */
+.intro {
+    color: rgb(240, 113, 134);
+    grid-area: intro;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+/* -- ARTICLES -- */
+
+.collapsible {
+    display:none;
+}
+.gridcontent4{
+    color:rgb(226, 108, 128);
+    grid-area: content1;
+}
+#tag {
+    color:rgb(226, 108, 128);
+    grid-area: tag1;
+}
+#lol {
+    color:rgb(226, 108, 128);
+    grid-area: title1;
+}
+.tidusweb {
+    grid-area: img1;
+}
+
+/* FTG */
+.gridcontent2{
+    color:rgb(226, 108, 128);
+    grid-area: content2;
+}
+.producer {
+    color:rgb(226, 108, 128);
+}
+#lol {
+    color:rgb(226, 108, 128);
+    grid-area: title1;
+}
+.tidusweb {
+    grid-area: img1;
+}
+
+
+/**/
+.gridcontent3{
+    color:rgb(226, 108, 128);
+    grid-area: content3;
+}
+/**/
+.gridcontent{
+    color:rgb(226, 108, 128);
+    grid-area: content4;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /* -- MOBILE FIRST STYLES -- 
 This is a dressed down version of the portfolio */
 /* -- GRID -- */
-
+@media only screen and (min-height:920px) {
+    
 body {
     display: grid;
     grid-template-areas: 
@@ -204,6 +312,10 @@ h3 {
     height: auto;
     padding-right: 2%;
 }
+/* -- DESTROY --*/
+.tidusweb {
+    display: none;
+}
+}
 
-/* -- MEDIA QUERIES --*/
 

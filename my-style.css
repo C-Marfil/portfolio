@@ -44,17 +44,26 @@ body {
     grid-area: intro;
     padding-left: 10%;
     padding-right:10%;
+    font-size: 3vw;
 }
 
 /* -- ARTICLES -- */
-
+.visitlink {
+    color:rgb(226, 108, 128);
+}
+.visitlink:hover {
+    font-size:1.2vw;
+}
+.visitlink::after {
+    content: " ↗"
+}
 .collapsible {
     display:none;
 }
 .gridcontent4{
     color:rgb(226, 108, 128);
     grid-area: content1;
-    padding-bottom:100px;
+    padding-bottom:68px;
     padding-right:10%;
 }
 #tag {
@@ -73,7 +82,8 @@ body {
 .tidusweb {
     grid-area: img1;
     padding-left:10%;
-    padding-top: 10%;
+    padding-top: 5%;
+    border-radius: 20%;
 }
 .producer {
     color:rgb(226, 108, 128);
@@ -85,32 +95,63 @@ body {
 .gridcontent2{
     color:rgb(226, 108, 128);
     grid-area: content2;
-}
-.producer {
-    color:rgb(226, 108, 128);
+    padding-bottom:100px;
+    padding-right:10%;
 }
 #lol {
     color:rgb(226, 108, 128);
     grid-area: title1;
 }
-.ftgweb {
+.ebunita {
     grid-area: img2;
-    padding-left:10%;
     padding-top: 10%;
+    padding-left:10%;
+    padding-top: 5%;
+    border-radius: 20%;
 }
 
 
-/**/
+/*KEIKEN*/
 .gridcontent3{
     color:rgb(226, 108, 128);
     grid-area: content3;
+    padding-bottom:20px;
+    padding-right:10%;
 }
-/**/
+.producer {
+    color:rgb(226, 108, 128);
+    grid-area: tag1;
+    font-size: 1vw;
+}
+.keiken {
+    grid-area: img3;
+    padding-top: 10%;
+    padding-left:10%;
+    padding-top: 5%;
+    border-radius: 20%;
+}
+/* BIRTHDAY GARDEN */
 .gridcontent{
     color:rgb(226, 108, 128);
     grid-area: content4;
 }
+.yaloo {
+    grid-area: img4;
+    padding-top: 10%;
+    padding-left:10%;
+    padding-top: 5%;
+    border-radius: 20%;
+}
+.producer {
+    color:rgb(226, 108, 128);
+    grid-area: tag1;
+    font-size: 1vw;
+}
 
+/* DESTROY */
+.shortintro {
+    display:none;
+}
 }
 
 
@@ -162,10 +203,12 @@ body {
 }
 h3 {
     grid-area: about;
-    justify-self: end;
-    align-self: center;
     color: rgb(226, 108, 128);
-    padding-right: 10px;
+    padding-right: 0px;
+   
+}
+.about {
+    padding-left:85%;
 }
 
 
@@ -182,6 +225,15 @@ h3 {
 }
 
 /* General styles for articles and content */
+.visitlink {
+    color:rgb(226, 108, 128);
+}
+.visitlink:hover {
+    font-size:1.2vw;
+}
+.visitlink::after {
+    content: " ↗"
+}
 h2 {
     font-size: 3vw;
     color: rgb(226, 108, 128);
@@ -314,8 +366,8 @@ h3 {
     content: "👋🏼 "
     
 }
-#hello {
-    
+.clickbelow{
+    font-size: 1.5vw;
 }
 .hello{
     text-align:left;
@@ -332,6 +384,18 @@ h3 {
 /* -- DESTROY --*/
 .tidusweb {
     display: none;
+}
+.ebunita {
+    display: none;
+}
+.keiken {
+    display:none;
+}
+.yaloo {
+    display:none;
+}
+#longintro {
+    display:none;
 }
 }
 

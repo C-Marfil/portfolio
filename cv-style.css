@@ -1,0 +1,65 @@
+/*  -- GENERAL STYLING -- */
+/* -- Font --*/
+
+body {
+    background: rgb(234,215,235);
+    background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);}
+.text {
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(230, 106, 126);
+}
+.body {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 0.5fr 1fr;
+}
+
+
+/* -- Navigator -- */
+
+.aboutheader {
+    font-size: 2vw;
+    padding-left: 5%;
+  
+}
+.backtoindex {
+    font-size: 1vw;
+    padding-right:5%;
+    justify-self: end;
+    
+}
+
+
+
+/* -- Hello -- */
+
+.hello::before {
+    content: "👋🏼 "
+    
+}
+.hello{
+   
+    text-align:left;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top:5%;
+    justify-self:flex-end;
+}
+#img {
+    grid-column: 2/3;   
+    border-radius: 15%;
+    width: 50%;
+    height: auto;
+    justify-self:center;
+    
+}
+/* CV */
+.cv {
+    display:flex;
+    flex-direction: column;
+   
+}
+.services {
+
+    
+}

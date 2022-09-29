@@ -23,6 +23,7 @@ body {
     "img2 content2"
     "img3 content3"
     "img4 content4"
+    "footer footer"
 }
 
 /* -- NAV -- */
@@ -75,7 +76,7 @@ body {
     color:rgb(226, 108, 128);
     grid-area: title1;
 }
-#lol::after {
+#lol::before {
     content: "  🤣 ";
 }
 
@@ -85,11 +86,7 @@ body {
     padding-top: 5%;
     border-radius: 20%;
 }
-.producer {
-    color:rgb(226, 108, 128);
-    grid-area: tag1;
-    font-size: 1vw;
-}
+
 
 /* FTG */
 .gridcontent2{
@@ -109,7 +106,14 @@ body {
     padding-top: 5%;
     border-radius: 20%;
 }
-
+#ftg::before{
+    content:" ⭐";
+}
+.producer {
+    color:rgb(226, 108, 128);
+    grid-area: tag1;
+    font-size: 1vw;
+}
 
 /*KEIKEN*/
 .gridcontent3{
@@ -118,17 +122,15 @@ body {
     padding-bottom:20px;
     padding-right:10%;
 }
-.producer {
-    color:rgb(226, 108, 128);
-    grid-area: tag1;
-    font-size: 1vw;
-}
 .keiken {
     grid-area: img3;
     padding-top: 10%;
     padding-left:10%;
     padding-top: 5%;
     border-radius: 20%;
+}
+#ae::before{
+    content:" 🪞";
 }
 /* BIRTHDAY GARDEN */
 .gridcontent{
@@ -142,12 +144,39 @@ body {
     padding-top: 5%;
     border-radius: 20%;
 }
-.producer {
-    color:rgb(226, 108, 128);
-    grid-area: tag1;
-    font-size: 1vw;
+#Bday::before{
+    content:"   🌱 🌱  ";
+}
+ /* TRYING TO GET THE WAND ANIMATED */
+
+ @keyframes sakura {
+    0% {grid-area: intro; transform: rotate(360deg); padding-left:0%; padding-right:0%}
+    100% {grid-area: intro; transform: rotate(780deg); padding-left:50%; padding-right:50%}
 }
 
+.sakura {
+    height:15vw;
+    display:block;
+    position: absolute;
+    animation-name: sakura;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    grid-area:intro;
+    opacity: 0.2;
+}
+.footer {
+    grid-area: footer;
+    color:rgb(226, 108, 128);
+    font-size: 1vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+.footer::after {
+    content: "carlos.marfil.r@gmail.com";
+}
 /* DESTROY */
 .shortintro {
     display:none;
@@ -183,6 +212,7 @@ body {
     "content3 content3"
     "article4 article4"
     "content4 content4"
+    "footer footer"
 
 }
 /*  -- GENERAL STYLING -- */
@@ -353,6 +383,18 @@ h3 {
     transition: max-height 0.2s ease-out;
     background: linear-gradient(90deg, rgba(234,215,235,1) 0%, rgba(245,245,245,1) 24%, rgba(255,255,255,1) 68%, rgba(240,227,239,1) 100%);
   }
+/*FOOTER*/
+.footer {
+    grid-area: footer;
+    color:rgb(226, 108, 128);
+    font-size: 1vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+.footer::after {
+    content: "carlos.marfil.r@gmail.com";
+}
 /* ABOUT PAGE */
 .aboutheader {
     font-size: 2vw;
@@ -396,6 +438,9 @@ h3 {
 }
 #longintro {
     display:none;
+}
+.sakura {
+    display: none;
 }
 }
 
